@@ -20,5 +20,17 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('redirect/',views.redirect_page, name='redirect_page')
+    
+    # for method 1
+    path('redirect1/',views.redirect_page, name='redirect_page'),
+    path('home1/', views.home1, name='home1'),  
+    
+    # for method 2
+    path('redirect2/',views.redirect2, name='redirect2'),
+    path('home2/',views.home2, name='home2'),
+
+    # for method 3(sending url with data):
+    path('redirect3/',views.redirect3, name='redirect3'),
+    path('home3/',views.home3, name='home3')
+
 ]
